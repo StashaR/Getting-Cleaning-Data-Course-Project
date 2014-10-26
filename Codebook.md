@@ -5,9 +5,11 @@ date: "October 26, 2014"
 
 #subject_id
 ID's, ranging from 1 to 30, for 30 volunteers within an age bracket of 19-48 years. 70% of the volunteers was selected for generating the training data and 30% the test data.
+No units.
 
 #activity_name
 Indicate which of six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) the subeject performed while wearing a smartphone (Samsung Galaxy S II) on the waist.
+No units.
 
 #variable
 
@@ -19,6 +21,8 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 mean(): Mean value AND std(): Standard deviation applied to the following set of signals:
+
+The acceleration signal (Acc) is in standard gravity units 'g'. The united for the angular velocity vector (Gyro) measured by the gyroscope for each window sample are radians/second. 
 
 fBodyAcc-mean()-X
 fBodyAcc-mean()-Y
@@ -89,7 +93,7 @@ tGravityAccMag-std()
 
 #value
 Average of each variable for each activity and each subject.
-Features are normalized and bounded within [-1,1].
+Features are normalized and bounded within [-1,1]. Same units as above.
 
 #Dataset Citation:
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012.
