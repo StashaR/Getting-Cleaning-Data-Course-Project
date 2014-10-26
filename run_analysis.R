@@ -1,8 +1,4 @@
 run_analysis <- function() {
-  #ensure that reshape2 package is installed
-  library(reshape2)
-  reshape2()
-  
   #loads the activity labels
   activity_labels <- read.table("activity_labels.txt", col.names = c("activity_id","activity_name"))
   
